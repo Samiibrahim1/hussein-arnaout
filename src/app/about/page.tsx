@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 }
 
 const DEFAULT_STATS = [
-  { value: '15+',  label: 'Years Experience' },
-  { value: '200+', label: 'Projects Completed' },
+  { value: '4+',  label: 'Years Experience' },
+  { value: '80+', label: 'Projects Completed' },
   { value: '12',   label: 'Design Awards' },
   { value: '4',    label: 'Countries' },
 ]
