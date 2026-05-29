@@ -1,5 +1,5 @@
 import { client } from '@/lib/sanity'
-import { featuredProjectsQuery } from '@/lib/queries'
+import { recentProjectsQuery } from '@/lib/queries'
 import Hero from '@/components/Hero'
 import ProjectCard from '@/components/ProjectCard'
 import FadeIn from '@/components/FadeIn'
@@ -25,7 +25,7 @@ const PROCESS = [
 
 export default async function HomePage() {
   const projects = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID
-    ? await client.fetch(featuredProjectsQuery)
+    ? await client.fetch(recentProjectsQuery)
     : []
 
   return (

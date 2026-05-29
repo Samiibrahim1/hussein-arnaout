@@ -23,6 +23,17 @@ export const featuredProjectsQuery = groq`
   }
 `
 
+export const recentProjectsQuery = groq`
+  *[_type == "project"] | order(_createdAt desc) [0..2] {
+    _id,
+    title,
+    slug,
+    category,
+    year,
+    coverImage,
+  }
+`
+
 export const aboutQuery = groq`
   *[_type == "about" && _id == "about"][0] {
     photo,
